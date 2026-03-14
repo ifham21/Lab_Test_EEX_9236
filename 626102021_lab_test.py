@@ -38,3 +38,12 @@ def top_users(data):
 
 print("Top users in Dataset1:", top_users(data1))
 print("Top users in Dataset2:", top_users(data2))
+
+# Conclusion
+# The analysis of Facebook ego network datasets revealed differences in user connectivity.
+# By computing summary statistics and applying a connection counting algorithm,
+# the most connected users in each network were identified.
+# This helps understand interaction patterns within social networks.
+
+# ------------ Github Repository: ---------------------
+# https://github.com/ifham21/Lab_Test_EEX_9236
