@@ -1,0 +1,4 @@
+# 1. Define a problem statement
+
+This project analyzes two Facebook network datasets (1684.edges and 1912.edges) to identify user connectivity patterns
+and determine the most connected users in each network.
