@@ -5,7 +5,7 @@ and determine the most connected users in each network.
 '''
 import pandas as pd
 import numpy as np
-
+from collections import Counter
 
 # 2. Read the datasets into Python
 data1 = pd.read_csv("1684.edges", sep=" ", header=None) # Load dataset 1
@@ -30,3 +30,11 @@ print("Standard deviation:", np.std(data2[0]))
 
 
 # 4. Design and implement an algorithm
+print("\nDesign and implement an algorithm")
+def top_users(data):
+    users = list(data[0]) + list(data[1])
+    connections = Counter(users)
+    return connections.most_common(5)
+
+print("Top users in Dataset1:", top_users(data1))
+print("Top users in Dataset2:", top_users(data2))
